@@ -1,3 +1,9 @@
+As my first Circuit Python Assignment, the hardest part was setting up Visual Studio code to be compatible with the board that we’re using. 
+Other than that, the code was very simple and I pretty much got most of it from the internet. 
+What I would do differently next time would be to follow directions more closely and more logically. 
+It would save a lot of time and would help me budget more time into trying to do other things with the assignments. 
+
+
 import board
 import neopixel
 import time 
