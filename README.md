@@ -150,10 +150,11 @@ while True:
 
 ### Wiring
 
-![name]
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/sensorwiring.png?raw=true)
 
 ### Reflection
 
+The process to complete this assignment was very much similar to the Servo assignment, where all I had to do was copy some code down into my Visual Studio Code app, mess around with some of the colors, and move some files from, again, one lib folder to another. One thing I would do differently would be to try some easier solutions to the code. I just feel like the code I was using was too long for it’s purpose. 
 
 
 
