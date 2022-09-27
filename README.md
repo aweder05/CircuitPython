@@ -10,12 +10,16 @@
 ## Hello_CircuitPython
 
 ### Description & Code
-
+The purpose of this assignment is to get the serial monitor to print "Hello World"
 
 Here's how you make code look like code:
 
 ```python
-Code goes here
+from time import sleep
+
+while True:
+    print("Hello World!") ##Prints "Hello World!" to the serial monitor
+    sleep(1)
 
 ```
 
