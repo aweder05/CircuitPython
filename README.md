@@ -81,7 +81,7 @@ while True:
 
 ### Evidence
 
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/spinnervid.gif.gif?raw=true)
 
 ### Wiring
 
@@ -101,7 +101,7 @@ Code goes here
 
 ### Evidence
 
-![name](https://github.com/aweder05/CircuitPython/blob/master/media/spinnervid.gif.gif?raw=true)
+
 
 ### Wiring
 
