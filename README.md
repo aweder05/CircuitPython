@@ -41,7 +41,6 @@ The wiring of this assignment is quite literally just plugging in the board into
 Image credit goes to [Adafruit Industries](https://www.adafruit.com/product/4000)
 
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
 The hardest part about this assignment is trying to set up visual studio code to make it compatible with everything. It was also the very first time I had ever touched circuit python, and the language was very different to what I was used to; Arduino language. 
 
@@ -52,9 +51,32 @@ The hardest part about this assignment is trying to set up visual studio code to
 
 ### Description & Code
 
-```python
-Code goes here
+The purpose of this assignment is to make a servo move using the Adafruit metro board 
 
+```python
+#SPDX-FileCopyrightText: 2018 Kattni Rembor for Adafruit Industries
+#
+# SPDX-License-Identifier: MIT
+
+"""CircuitPython Essentials Servo standard servo example"""
+import time
+import board
+import pwmio
+from adafruit_motor import servo
+
+# create a PWMOut object on Pin A2.
+pwm = pwmio.PWMOut(board.D3, duty_cycle=2 ** 15, frequency=50)
+
+# Create a servo object, my_servo.
+my_servo = servo.Servo(pwm)
+
+while True:
+    for angle in range(0, 180, 10):  # 0 - 180 degrees, 5 degrees at a time.
+        my_servo.angle = angle
+        time.sleep(0.05)
+    for angle in range(180, 0, -10): # 180 - 0 degrees, 5 degrees at a time.
+        my_servo.angle = angle
+        time.sleep(0.05)
 ```
 
 ### Evidence
@@ -79,7 +101,7 @@ Code goes here
 
 ### Evidence
 
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/spinnervid.gif.gif?raw=true)
 
 ### Wiring
 
