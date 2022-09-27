@@ -12,8 +12,6 @@
 ### Description & Code
 The purpose of this assignment is to get the serial monitor to print "Hello World"
 
-Here's how you make code look like code:
-
 ```python
 from time import sleep
 
@@ -26,9 +24,7 @@ while True:
 
 ### Evidence
 
-
-![spinningMetro_Optimized](https://user-images.githubusercontent.com/54641488/192549584-18285130-2e3b-4631-8005-0792c2942f73.gif)
-
+https://mail.google.com/mail/u/0/#inbox/KtbxLzGHhZcLbjpMrcsSKnfGTRvwJxbQBV
 
 And here is how you should give image credit to someone, if you use their work:
 
