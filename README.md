@@ -159,7 +159,9 @@ The process to complete this assignment was very much similar to the Servo assig
 
 
 
-## NextAssignment
+## LCD Backpack Button Counter with Toggle Feature
+
+The purpose of this assignment was to wire two buttons and an LCD backpack to a breadboard. Each time pushing the button wired to the digital 3 pin, the counter on the LCD would increase by one. But, when holding down the button wired to the digital 2 pin, and then pressing the other button while holding down the first one, the counter would decrease by one. All of this is printed on the liquid crystal display (LCD) backpack.
 
 ### Description & Code
 
