@@ -24,7 +24,7 @@ while True:
 
 ### Evidence
 
-https://mail.google.com/mail/u/0/#inbox/KtbxLzGHhZcLbjpMrcsSKnfGTRvwJxbQBV
+
 
 And here is how you should give image credit to someone, if you use their work:
 
