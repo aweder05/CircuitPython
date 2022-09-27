@@ -85,6 +85,8 @@ while True:
 
 ### Wiring
 
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/spinnerwiring.png?raw=true)
+
 ### Reflection
 
 
