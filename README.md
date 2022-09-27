@@ -33,8 +33,10 @@ Image credit goes to [Rick A](https://www.youtube.com/watch?v=dQw4w9WgXcQ&scrlyb
 
 
 ### Wiring
-  
-Then post an image here.   ![name](https://github.com/aweder05/CircuitPython/blob/master/media/helloworldwiring.jpg?raw=true)
+
+The wiring of this assignment is quite literally just plugging in the board into one of the USB ports on the Computer
+
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/helloworldwiring.jpg?raw=true)
 
 Image credit goes to [Adafruit Industries](https://www.adafruit.com/product/4000)
 
