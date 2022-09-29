@@ -3,7 +3,7 @@
 ## Table of Contents
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
-* [CircuitPython_LCD](#CircuitPython_LCD)
+* [CircuitPython_DistanceSensor](#CircuitPython_DistanceSensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 ---
 
@@ -93,7 +93,7 @@ Adding a servo to the complexity of the code was a bit tricky, as the terminolog
 
 
 
-## CircuitPython_LCD
+## CircuitPython_DistanceSensor
 
 The purpose of this assignment is to turn the neopixel different colors corresponding to the distance measured on the HC-SR04 ultrasonic sensor. We want neopixel to turn red when your object is less than 5cm, blue when between 5 and 20cm, and green when farther than 20cm. Simultaneously, the distance is being printed on the serial monitor. 
 
