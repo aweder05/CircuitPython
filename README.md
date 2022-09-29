@@ -220,6 +220,8 @@ while True:
 
 ### Evidence
 
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/lcdbuttontoggle.gif.gif?raw=true)
+
 ### Wiring
 
 ![name](https://github.com/aweder05/CircuitPython/blob/master/media/lcdbuttontogglewiring.png?raw=true)
