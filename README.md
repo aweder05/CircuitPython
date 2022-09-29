@@ -4,8 +4,7 @@
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_LCD](#CircuitPython_LCD)
-* [LCD_Backpack_Button_Counter_with_Toggle_Feature
-](#LCD_Backpack_Button_Counter_with_Toggle_Feature)
+* [CircuitPython_LCD](#CircuitPython_LCD)
 ---
 
 ## Hello_CircuitPython
