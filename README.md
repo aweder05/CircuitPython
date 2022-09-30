@@ -85,7 +85,7 @@ while True:                 #[17-27]If a button is pressed
 
 ### Evidence
 
-![name](https://github.com/aweder05/CircuitPython/blob/master/media/spinnervid.gif.gif?raw=true)
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/spinner.gif.gif?raw=true)
 
 ### Wiring
 
