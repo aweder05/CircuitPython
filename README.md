@@ -54,30 +54,33 @@ The hardest part about this assignment is trying to set up visual studio code to
 The purpose of this assignment is to make a servo move using the Adafruit metro board 
 
 ```python
-#SPDX-FileCopyrightText: 2018 Kattni Rembor for Adafruit Industries
-#
-# SPDX-License-Identifier: MIT
-
-"""CircuitPython Essentials Servo standard servo example"""
-import time
-import board
-import pwmio
+import board                       #[1-16] Setup for Buttons                 
+import time                        #And servo
+import math
+import pwmio 
 from adafruit_motor import servo
+from digitalio import DigitalInOut, Direction, Pull
+btn = DigitalInOut(board.D3)
+btn2 = DigitalInOut(board.D2)
+btn.direction = Direction.INPUT
+btn2.direction = Direction.INPUT
+btn.pull = Pull.UP
+btn2.pull = Pull.UP
 
-# create a PWMOut object on Pin A2.
-pwm = pwmio.PWMOut(board.D3, duty_cycle=2 ** 15, frequency=50)
+pwm = pwmio.PWMOut(board.D5, duty_cycle=2 **15, frequency=50)
+myServo = servo.Servo(pwm)
 
-# Create a servo object, my_servo.
-my_servo = servo.Servo(pwm)
-
-while True:
-    for angle in range(0, 180, 10):  # 0 - 180 degrees, 5 degrees at a time.
-        my_servo.angle = angle
-        time.sleep(0.05)
-    for angle in range(180, 0, -10): # 180 - 0 degrees, 5 degrees at a time.
-        my_servo.angle = angle
-        time.sleep(0.05)
-```
+print("starting") 
+while True:                 #[17-27]If a button is pressed
+    print("re")             #Rotate to either 180 or 0
+    if btn.value == True:
+        myServo.angle = 180
+        time.sleep(1)
+        print("Right")
+    elif btn2.value == True :
+        myServo.angle = 0
+        time.sleep(1)
+        print("Left")
 
 ### Evidence
 
