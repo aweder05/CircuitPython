@@ -274,6 +274,9 @@ while True:
 
 ![name](https://github.com/lwhitmo/CircuitPython/raw/master/Images/Screenshot%202022-11-01%20115847.png)
 
+### Reflection 
+
+This assignment was very frustrating, but not because the actual assignment was difficult. It was difficult because after switching from one computer to another, everything got messed up, causing a multitude of problems. After fixing all of that, I saw that my wiring was messed up because the diagram I was using was with an Arduino, which powered the potentiometer with 5 volts, when I actually just needed to power it with 3.3. Me not being an expert at wiring, fixing everything and making it work turned out to be a tedious and frustrating process, but in the end, the biggest lesson that I learned from completing this assignment is persistence, and to ask a whole lot of damn questions. 
 
 
 
