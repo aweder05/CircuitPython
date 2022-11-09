@@ -268,7 +268,7 @@ while True:
 
 ### Evidence
 
-![name]
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/motorcontrolgif.gif?raw=true)
 
 ### Wiring 
 
