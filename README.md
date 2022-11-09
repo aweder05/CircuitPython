@@ -5,6 +5,7 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_DistanceSensor](#CircuitPython_DistanceSensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
+* [Circuit Python Motor-Control](#Circuit Python Motor-Control)
 ---
 
 ## Hello_CircuitPython
@@ -160,7 +161,7 @@ while True:
 
 The process to complete this assignment was very much similar to the Servo assignment, where all I had to do was copy some code down into my Visual Studio Code app, mess around with some of the colors, and move some files from, again, one lib folder to another. One thing I would do differently would be to try some easier solutions to the code. I just feel like the code I was using was too long for it’s purpose. 
 
-
+---
 
 
 ## LCD Backpack Button Counter with Toggle Feature
@@ -233,3 +234,46 @@ while True:
 ### Reflection
 
 This assignment was more difficult than the other three just because it took a while to nail down the wiring and to tweak around with the code.
+
+---
+
+## Circuit Python Motor-Control
+
+The purpose of this assignment was to use a Metro Express board to use a potentiometer to determine the speed at which a DC Motor spins. This was accomplished by determining a set range of values at which the DC motor turns on and starts spinning. Then, the more that the potentiometer turns, the faster the motor spins. The motor is being powered by a battery pack, and the potentiometer is powered by the board. 
+
+### Description and Code
+
+```python
+import time
+import board
+import simpleio
+from analogio import AnalogIn 
+import pwmio  
+
+analog_in = AnalogIn(board.A2) #potentionmeter pin
+pin_out = pwmio.PWMOut(board.A1,duty_cycle=65535,frequency=5000)
+print("Hello!!")
+
+
+while True:
+
+    sensor_value = analog_in.value
+    # Map the sensor's range from 0<=sensor_value<=255 to 0<=sensor_value<=1023
+    mapped_value = int(simpleio.map_range(sensor_value, 0, 65535, 0, 255))
+
+    pin_out.duty_cycle = sensor_value
+    print("mapped sensor value: ", sensor_value)
+    time.sleep(0.15) 
+```
+
+### Evidence
+
+![name]
+
+### Wiring 
+
+![name](https://github.com/lwhitmo/CircuitPython/raw/master/Images/Screenshot%202022-11-01%20115847.png)
+
+
+
+
