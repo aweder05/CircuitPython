@@ -339,4 +339,6 @@ while True:
 
 ![name](https://user-images.githubusercontent.com/112981481/225733918-45b95248-ce2e-4b48-98c1-cc81cd542057.png)
 
+### Reflection
 
+The hardest part about this project was definitely figuring out how to make the LCD screen work. Ive gotten it to work in the past, but with the temperature sensor, it's very difficult to get power to the LCD screen and then on top of that make it finally print something else. Wiring was very simple, and could be figured out with two quick google searches. The code, on the other hand, was impossible for me, as is most everything else that uses Visual Studio code. All code credit goes to Kazuo Shinozaki. The only coding I did was a little bit of tweaking here and there to get the LCD work at the desired outcome. 
