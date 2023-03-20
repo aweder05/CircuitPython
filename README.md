@@ -330,6 +330,13 @@ while True:
     lcd.print("Temp: {}F".format(temp_F))
     time.sleep(.5)
 ```
-    
+
+### Evidence
+
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/ezgif.com-optimize.gif?raw=true)
+
+### Wiring 
+
+![name](https://user-images.githubusercontent.com/112981481/225733918-45b95248-ce2e-4b48-98c1-cc81cd542057.png)
 
 
