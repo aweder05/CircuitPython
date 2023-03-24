@@ -5,8 +5,9 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_DistanceSensor](#CircuitPython_DistanceSensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
-* CircuitPython_Motor-Control
+* CircuitPython Motor-Control
 * Temperature Sensor
+* Rotary Encoder
 ---
 
 ## Hello_CircuitPython
@@ -342,3 +343,58 @@ while True:
 ### Reflection
 
 The hardest part about this project was definitely figuring out how to make the LCD screen work. Ive gotten it to work in the past, but with the temperature sensor, it's very difficult to get power to the LCD screen and then on top of that make it finally print something else. Wiring was very simple, and could be figured out with two quick google searches. The code, on the other hand, was impossible for me, as is most everything else that uses Visual Studio code. All code credit goes to Kazuo Shinozaki. The only coding I did was a little bit of tweaking here and there to get the LCD work at the desired outcome. 
+
+---
+
+## Circuit Python Rotary Encoder
+
+### Description 
+
+In this assignment our objective was to create a menu-controlled traffic light using a 20 detent rotary encoder. 
+
+### Code
+
+```python
+import rotaryio
+import board
+import digitalio
+import neopixel
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+
+# get and i2c object
+i2c = board.I2C()
+
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+
+led: neopixel.Neopixel = neopixel.NeoPixel(board.NEOPIXEL, 1) # initialization of hardware
+print("neopixel")
+
+led.brightness = 0.1
+
+button = digitalio.DigitalInOut(board.D12)
+button.direction = digitalio.Direction.INPUT
+button.pull = digitalio.Pull.UP
+
+colors = [("stop", (255, 0, 0)), ("caution", (128, 128, 0)), ("go", (0, 255, 0))]
+
+encoder = rotaryio.IncrementalEncoder(board.D10, board.D9, 2)
+last_position = None
+while True:
+    position = encoder.position
+    if last_position is None or position != last_position:
+        lcd.clear()
+        lcd.print(colors[position % len(colors)][0])
+    if(not button.value):
+        led[0] = colors[position % len(colors)][1]
+    last_position = position
+    
+Credit for Code goes to River Lewis
+
+```
+
+### Wiring 
+
+
+### Reflection
