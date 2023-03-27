@@ -395,9 +395,15 @@ Credit for Code goes to River Lewis
 
 ```
 
+### Evidence
+
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/trafficlight.gif)
+##### Gif credits go to River Lewis
+
 ### Wiring 
 
 ![name](https://github.com/aweder05/CircuitPython/blob/master/media/Screenshot%202023-03-24%20155213.png)
 
 ### Reflection
+
 
