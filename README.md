@@ -445,7 +445,7 @@ Credit to River Lewis
 ![name](https://rivques.github.io/docs/photointcircuit.png)
 
 ### Evidence 
-![name](https://rivques.github.io/docs/Photointerrupter.gif)
+![name]()
 
 
 
