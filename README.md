@@ -406,4 +406,37 @@ Credit for Code goes to River Lewis
 
 ### Reflection
 
+---
+
+## Circuit Python Photointerruptor 
+
+### Descripition
+
+For this assignment, our objective was to be able to count and display on the serial monitor the amount of times a photointerruptors beam was interrupted. 
+
+### Code 
+```python
+import time
+import digitalio
+import board
+
+photoI = digitalio.DigitalInOut(board.D7)
+photoI.direction = digitalio.Direction.INPUT
+photoI.pull = digitalio.Pull.UP
+
+last_photoI = True
+last_update = -4
+
+photoICrosses = 0
+
+while True:
+    if time.monotonic()-last_update > 4:
+        print(f"The number of crosses is {photoICrosses}")
+        last_update = time.monotonic()
+    
+    if last_photoI != photoI.value and not photoI.value:
+        photoICrosses += 1
+    last_photoI = photoI.value
+```
+
 
