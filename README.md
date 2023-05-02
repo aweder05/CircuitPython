@@ -445,8 +445,10 @@ Credit to River Lewis
 ![name](https://rivques.github.io/docs/photointcircuit.png)
 
 ### Evidence 
-![name]()
+![name](https://github.com/aweder05/CircuitPython/blob/master/media/ezgif.com-optimize%20(2).gif)
 
+### Reflection 
+Much like the other assignment, my biggest issue with circuit python seems to be that I just can't be at peace with VS Code. But other than that, I pretty much just used someone else's wiring and code and put it all together on my own. I did learn a lot more about the different photointerrupter commands, and about how they are different to Arduino commands since they are circuit python. 
 
 
 
