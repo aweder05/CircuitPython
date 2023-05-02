@@ -406,6 +406,8 @@ Credit for Code goes to River Lewis
 
 ### Reflection
 
+This assignment was mostly difficult because of how hard it was to learn the new code from the rotary encoder library and actually use it in CircuitPython. 
+
 ---
 
 ## Circuit Python Photointerruptor 
