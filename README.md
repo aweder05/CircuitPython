@@ -412,7 +412,7 @@ Credit for Code goes to River Lewis
 
 ### Descripition
 
-For this assignment, our objective was to be able to count and display on the serial monitor the amount of times a photointerruptors beam was interrupted. 
+For this assignment, our objective was to be able to count and display on the serial monitor the amount of times a photointerruptor's beam was interrupted. 
 
 ### Code 
 ```python
@@ -437,6 +437,16 @@ while True:
     if last_photoI != photoI.value and not photoI.value:
         photoICrosses += 1
     last_photoI = photoI.value
+    
+Credit to River Lewis
 ```
+
+### Wiring 
+![name](https://rivques.github.io/docs/photointcircuit.png)
+
+### Evidence 
+![name](https://rivques.github.io/docs/Photointerrupter.gif)
+
+
 
 
